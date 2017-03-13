@@ -6,7 +6,7 @@ import './App.css';
 
 class App extends Component {
   serverUrl(){
-    return 'https://zgoodnews.herokuapp.com/';
+    return 'https://zgoodnews.herokuapp.com';
   }
 
   constructor(){
