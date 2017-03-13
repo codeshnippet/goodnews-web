@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Filter extends Component{
     render(){
       return (
-        <li>{this.props.name}</li>
+        <li><a href="#" onClick={ this.props.filterClick }>{this.props.name}</a></li>
       )
     }
 }

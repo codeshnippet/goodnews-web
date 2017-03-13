@@ -4,10 +4,13 @@ import Filter from './Filter'
 class FiltersList extends Component {
   render() {
     const listItems = this.props.filters.map(
-      f => <Filter key={f.id} name={f.name} />
+      f => <Filter key={f.id} name={f.name} filterClick={ () => this.props.filterClick(f.id) }/>
     );
     return (
-      <ul>{listItems}</ul>
+      <div>
+        <h4>Filters</h4>
+        <ul>{listItems}</ul>
+      </div>
     );
   }
 }
